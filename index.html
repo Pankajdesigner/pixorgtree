@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Organization Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style type="text/css">
       body { background: #F9F9F9; color: #333666; margin: 0; padding: 0; }
@@ -20,6 +21,11 @@
         right:50px;
         bottom: 50px;
         z-index: 1;
+      }
+      @media (max-width:768px){
+        .panzoom img {
+          width: 200%;
+        }
       }
     </style>
     <script src="test/libs/jquery.js"></script>
