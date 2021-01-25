@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style type="text/css">
-      body { background: #F9F9F9; color: #333666; margin: 0; padding: 0; }
+      body {     background: #f1f1f1; color: #333666; margin: 0; padding: 0; }
       section { text-align: center; }
       .panzoom-parent { border: 2px solid #333; }
       .panzoom-parent .panzoom { border: 2px dashed #666; }
       .buttons { margin: 0 0 0; position: absolute;}
       .panzoom{
         height: 100vh;
+        cursor: grab !important;
+        position: relative;
       }
       .panzoom img{
-        width: 100%;
+            position: absolute;
+            left: 50%;
+            
+    width: 100%;
+
+            top: 50%;
+            transform: translate(-50%, -25%);
       }
       .buttons{
         position: absolute;
